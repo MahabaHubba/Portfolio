@@ -25,16 +25,44 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="gradient-bg">
-      <div className="container mt-5">
-        <div className="row justify-content-between">
-          <div className="boxborder bg-light border mb-4">
-            <h5 className="text-center"> Welcome </h5> 
-          </div>   
-        </div>
-      </div>
+    //Overall Container
+    <div class="container">
+   
+    <div class="row ">
+      
+    <div class="col-12">
+    <h5 className="text-center"> Welcome </h5> 
     </div>
+
+    <div class="row">
+  <div class="col-md-4">Portfolio</div>
+  <div class="col-md-8">Little segements</div>
+</div>
+
+    <div class="row">
+  <div class="col-md-8">Blah Blah Blah</div>
+  <div class="col-md-4">About Me</div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">Conact Me</div>
+  <div class="col-md-8">Icons</div>
+</div>
+
+  </div>
+</div>
+    // <div className="gradient-bg">
+    //   <div className="container mt-5">
+    //     <div className="row justify-content-between">
+    //       <div className="boxborder bg-light border mb-4">
+    //         <h5 className="text-center"> Welcome </h5> 
+    //       </div>   
+    //     </div>
+    //   </div>
+    // </div>
   );
+
+  
 }
 
 export default App;
