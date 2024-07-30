@@ -26,11 +26,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     //Overall Container
-    <div class="container">
+    <div class="container gradient-bg">
    
     <div class="row ">
       
-    <div class="col-12">
+    <div class="col-12 welcome">
     <h5 className="text-center"> Welcome </h5> 
     </div>
 

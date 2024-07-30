@@ -2,3 +2,7 @@
     background: linear-gradient(to bottom, grey, white);
     /* Adjust the direction and colors as needed */
   }
+
+  .welcome {
+    height: 10vh;
+  }
