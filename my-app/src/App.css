@@ -1,8 +1,34 @@
 .gradient-bg {
-    background: linear-gradient(to bottom, grey, white);
-    /* Adjust the direction and colors as needed */
-  }
+  background: radial-gradient(ellipse at top left, white 50%, black 100%);
+}
+
+
 
   .welcome {
     height: 10vh;
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;
+  
+  }
+
+  .welcometext {
+    font-family: "pokemon";
+  }
+
+  .aboutme1 {
+    height: 30vh;
+  }
+
+  .portfolio {
+    height: 30vh;
+  }
+
+  .contact1 {
+    height: 30vh;
+  }
+
+  @font-face {
+    font-family: "pokemon";
+    src: url('../public/pokemonfont/PokemonGb-RAeo.ttf') format('truetype');
   }

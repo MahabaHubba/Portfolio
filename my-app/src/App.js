@@ -1,5 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 //Currently is able to come one by one in terms of letters however there is some error
 // import React, { useState, useEffect } from 'react';
 
@@ -26,26 +29,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     //Overall Container
-    <div class="container gradient-bg">
+    <div className="container gradient-bg">
    
-    <div class="row ">
+    <div className="row ">
       
-    <div class="col-12 welcome">
-    <h5 className="text-center"> Welcome </h5> 
+    <div className="col-12 welcome">
+    <h5 className="text-center welcometext"> Welcome </h5> 
     </div>
 
     <div class="row">
-  <div class="col-md-4">Portfolio</div>
+  <div class="col-md-4 aboutme1">About Me</div>
   <div class="col-md-8">Little segements</div>
 </div>
 
     <div class="row">
-  <div class="col-md-8">Blah Blah Blah</div>
-  <div class="col-md-4">About Me</div>
+  <div class="col-md-8 portfolio">Portfolio</div>
+  <div class="col-md-4">Dashes</div>
 </div>
 
 <div class="row">
-  <div class="col-md-4">Conact Me</div>
+  <div class="col-md-4 contact1">Conact Me</div>
   <div class="col-md-8">Icons</div>
 </div>
 
