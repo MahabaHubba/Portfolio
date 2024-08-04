@@ -25,6 +25,10 @@
     }
   }
   
+  .nav-link-bounce:hover{
+    animation: bounce 1s infinite;
+  }
+
   .bouncing-text {
     display: inline-block;
     font-size: 50px;
@@ -75,3 +79,30 @@
     font-family: "pokemon";
     src: url('../public/pokemonfont/PokemonGb-RAeo.ttf') format('truetype');
   }
+
+  .navbarbackground {
+    background-color: whitesmoke;
+    font-family: "pokemon";
+    font-size:10px;
+  }
+
+.navbarname {
+  font-size: 15px;
+  margin-right: 16px;
+}
+
+/* @keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.nav-link-jump:hover {
+  animation: bounce 1s;
+} */

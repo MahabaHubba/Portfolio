@@ -1,30 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav} from 'react-bootstrap';
 
-
-//Currently is able to come one by one in terms of letters however there is some error
-// import React, { useState, useEffect } from 'react';
-
-// const TextReveal = () => {
-//   const [displayedText, setDisplayedText] = useState('');
-//   const fullText = 'Welcome';
-
-//   useEffect(() => {
-//     let index = 0;
-//     const interval = setInterval(() => {
-//       if (index < fullText.length) {
-//         setDisplayedText((prev) => prev + fullText[index]);
-//         index += 1;
-//       } else {
-//         clearInterval(interval);
-//       }
-//     }, 100);
-//     return () => clearInterval(interval);
-//   }, [fullText]);
-
-//   return <span>{displayedText}</span>;
-// };
 
 function App() {
   return (
@@ -32,21 +9,15 @@ function App() {
     <div className="container gradient-bg">
    
     <div className="row ">
-    <Navbar bg="dark" variant="dark" expand="lg">
-        <Navbar.Brand href="#home">MySite</Navbar.Brand>
+    <Navbar className='navbarbackground' expand="lg">
+        <Navbar className="navbarname">Mohibul Haque</Navbar>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link className='nav-link-bounce'>About Me</Nav.Link>
+            <Nav.Link className='nav-link-bounce'>Past Work</Nav.Link>
+            <Nav.Link className='nav-link-bounce'>Contact Me</Nav.Link>
+           
           </Nav>
         </Navbar.Collapse>
       </Navbar>
