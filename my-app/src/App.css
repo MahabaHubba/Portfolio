@@ -106,3 +106,21 @@
 .nav-link-jump:hover {
   animation: bounce 1s;
 } */
+
+@font-face {
+  font-family: "pokemonpixel";
+  src: url('../public/pokemonfont/PokemonPixels1-jYmj.ttf') format('truetype');
+}
+.pokemonpixel {
+  font-family: "pokemonpixel";
+  animation: bounce 1s infinite;
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.pokemonpixel2 {
+  font-family: "pokemonpixel";
+  animation: bounce 1s infinite;
+  font-size: 50px;
+  margin-left: 20px;
+}
