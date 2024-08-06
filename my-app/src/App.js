@@ -2,7 +2,14 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav} from 'react-bootstrap';
 import { useRef } from 'react';
+import ParagraphSections from './Sections/aboutmesection';
 
+const sections = [
+  "Hello my name is Mohibul Haque and welcome to my site",
+  "I'm a software engineer with one year of  software developing experience. I have a strong passion for transforming ideas into functional and user-friendly solutions. Throughout my career, I've collaborated with cross-functional teams and gained valuable insights into the ever-evolving software industry. ",
+  "My experience as an exercise physiologist has enabled me to work in a fast-paced environment, and collaborate effectively in a term environment to save time, money for my clients to reach their desired goal.",
+  "Continue down below to see what I'm about and if you have any questions, queries or concerns, please don't hesitate to contact me"
+];
 
 
 function App() {
@@ -33,7 +40,7 @@ function App() {
             <Nav.Link className='nav-link-bounce' onClick={() => scrollToRef(pastWorkRef)}>Past Work</Nav.Link>
             <Nav.Link className='nav-link-bounce' onClick={() => scrollToRef(hobbiesRef)}>Hobbies</Nav.Link>
             <Nav.Link className='nav-link-bounce' onClick={() => scrollToRef(contactRef)}>Contact Me</Nav.Link>
-           
+            <Nav.Link className='nav-link-bounce navlinkpokemon'>E</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -45,7 +52,9 @@ function App() {
 
     <div class="row" ref={aboutRef}>
   <div class="col-md-4 aboutme1">About Me</div>
-  <div class="col-md-8 aboutmesegment">Little segements</div>
+  <div class="col-md-8 aboutmesegment">
+  <ParagraphSections sections={sections} />
+  </div>
 </div>
 
     <div class="row" ref={pastWorkRef}>

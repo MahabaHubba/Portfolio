@@ -36,7 +36,7 @@
   }
 
   .aboutme1 {
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: center; /* Horizontally centers the content */
     align-items: center;
@@ -44,15 +44,16 @@
   }
 
   .aboutmesegment {
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: center; /* Horizontally centers the content */
     align-items: center;
     font-family: "pokemon";
+
   }
 
   .portfolio {
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: center; /* Horizontally centers the content */
     align-items: center;
@@ -83,7 +84,8 @@
   .navbarbackground {
     background-color: whitesmoke;
     font-family: "pokemon";
-    font-size:10px;
+    font-size:12px;
+    height: 5vh;
   }
 
 .navbarname {
@@ -125,4 +127,8 @@
   font-size: 50px;
   margin-left: 20px;
   margin-top: 150px;
+}
+.navlinkpokemon {
+  font-family: "pokemonpixel";
+  font-size: 30px;
 }
