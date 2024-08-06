@@ -9,11 +9,11 @@
     display: flex;
     justify-content: center; /* Horizontally centers the content */
     align-items: center;
-  
   }
 
   .welcometext {
     font-family: "pokemon";
+    margin-top: 150px;
   }
 
   @keyframes bounce {
@@ -116,6 +116,7 @@
   animation: bounce 1s infinite;
   font-size: 50px;
   margin-right: 20px;
+  margin-top: 150px;
 }
 
 .pokemonpixel2 {
@@ -123,4 +124,5 @@
   animation: bounce 1s infinite;
   font-size: 50px;
   margin-left: 20px;
+  margin-top: 150px;
 }

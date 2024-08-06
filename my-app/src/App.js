@@ -49,8 +49,8 @@ function App() {
 </div>
 
     <div class="row" ref={pastWorkRef}>
+    <div class="col-md-4 portfolio">Portfolio</div>
   <div class="col-md-8 portfolio">Dashes</div>
-  <div class="col-md-4 portfolio">Portfolio</div>
 </div>
 
 <div class="row" ref={hobbiesRef}>
