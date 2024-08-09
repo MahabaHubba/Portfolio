@@ -3,7 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav} from 'react-bootstrap';
 import { useRef } from 'react';
 import ParagraphSections from './Sections/aboutmesection';
+import ImageSlider from './Sections/portfolio';
 
+//Section for about me
 const sections = [
   "Hello my name is Mohibul Haque and welcome to my site",
   "I'm a software engineer with one year of  software developing experience. I have a strong passion for transforming ideas into functional and user-friendly solutions. Throughout my career, I've collaborated with cross-functional teams and gained valuable insights into the ever-evolving software industry. ",
@@ -12,6 +14,19 @@ const sections = [
 ];
 
 
+const images = [
+  { src: 'ichooseyou.png',
+    title: 'Agile Framework',
+    description:"HTML, CSS-Tailwind, JS",
+    url: "https://github.com/AdamIsitmez/I-Choose-You" },
+  { src: 'wagerless.png',
+    title: 'MVC Framework',
+    description: "HTML, CSS-Bootstrap,JS-Handlebar, Node.js, MySQL, Bycrypt.js, Heroku",
+    url: "https://github.com/Y1va/Wagerless"},
+  { src: 'Mongo.jpg', title: 'MERN Fullstack', description: "React, GraphQL, Node.js, MongoDB, JWT Authentication, Render", url: "https://github.com/BrxwnSugxr/MindOverMatter" },
+];
+
+//Section for navLink
 function App() {
   const aboutRef = useRef(null);
   const pastWorkRef = useRef(null);
@@ -25,7 +40,7 @@ function App() {
     });
   };
 
-
+  
   return (
     //Overall Container
     <div className="container gradient-bg">
@@ -59,7 +74,9 @@ function App() {
 
     <div class="row" ref={pastWorkRef}>
     <div class="col-md-4 portfolio">Portfolio</div>
-  <div class="col-md-8 portfolio">Dashes</div>
+  <div class="col-md-8 portfolio">
+  <ImageSlider images={images} />
+  </div>
 </div>
 
 <div class="row" ref={hobbiesRef}>
