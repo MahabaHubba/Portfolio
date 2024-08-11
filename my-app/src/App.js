@@ -4,6 +4,7 @@ import { Navbar, Nav} from 'react-bootstrap';
 import { useRef } from 'react';
 import ParagraphSections from './Sections/aboutmesection';
 import ImageSlider from './Sections/portfolio';
+import HobbiesSlider from './Sections/hobbies';
 
 //Section for about me
 const sections = [
@@ -25,6 +26,15 @@ const images = [
     url: "https://github.com/Y1va/Wagerless"},
   { src: 'Mongo.jpg', title: 'MERN Fullstack', description: "React, GraphQL, Node.js, MongoDB, JWT Authentication, Render", url: "https://github.com/BrxwnSugxr/MindOverMatter" },
 ];
+
+//Section for Hobbies
+const hobbiesimage = [
+  {src: "Japan.JPG", title: "Japan Trip", description: "Exploring light show at Team Lab Tokyo "}, 
+  {src: "Lifting.JPG", title: "Powerlifting", description: "Prepping to compete soon"},
+  {src: "Food.PNG", description: "My first time trying somalian mandi"},
+  {src: "Party.JPG", description: "Who doesn't like to dance?"}
+  
+]
 
 //Section for navLink
 function App() {
@@ -72,17 +82,28 @@ function App() {
   </div>
 </div>
 
-    <div class="row" ref={pastWorkRef}>
-    <div class="col-md-4 portfolio">Portfolio</div>
+    <div className="row portfolio" ref={pastWorkRef}>
+    <div className="col-md-4" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+    <p>Portfolio</p>
+    <p className='portfoliocontent'> Slide scross to see some projects I've made using various technologies as I've gathered more knowledge</p>
+    <p className='pokemonpixel3 nav-link-bounce'>Y</p>
+      </div>
   <div class="col-md-8 portfolio">
   <ImageSlider images={images} />
   </div>
 </div>
 
-<div class="row" ref={hobbiesRef}>
-  <div class="col-md-4 portfolio">Powerlifting</div>
-  <div class="col-md-8 portfolio">Hobbies</div>
+<div className="row portfolio" ref={hobbiesRef}>
+  <div className="col-md-4" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+    <p>Hobbies</p>
+    <p className='portfoliocontent'>Same as anyone else, I have a special interest in travelling, powerlifting, eating and partying</p>
+    <p className='pokemonpixel3 nav-link-bounce'>i</p>
+  </div>
+  <div className="col-md-8 portfolio">
+    <HobbiesSlider hobbiesimage={hobbiesimage} />
+  </div>
 </div>
+
 
 <div class="row" ref={contactRef}>
   <div class="col-md-4 contact1">Contact Me</div>

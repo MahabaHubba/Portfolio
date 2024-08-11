@@ -55,11 +55,28 @@
   .portfolio {
     height: 25vh;
     display: flex;
-    justify-content: center; /* Horizontally centers the content */
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
     font-family: "pokemon";
   }
 
+  .portfoliocontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .hobbiescontent {
+    height: 25vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: "pokemon";
+  }
+
+  
   .contact1 {
     height: 30vh;
     display: flex;
@@ -119,6 +136,13 @@
   font-size: 50px;
   margin-right: 20px;
   margin-top: 150px;
+}
+
+.pokemonpixel3 {
+  font-family: "pokemonpixel";
+  /* animation: bounce 1s infinite; */
+  font-size: 25px;
+  
 }
 
 .pokemonpixel2 {
