@@ -157,5 +157,14 @@
   font-size: 30px;
 }
 
-/* portfolio */
+/* Technical SKills css */
+.technicalskilltext {
+  font-family: "pokemon";
+  font-size: 15px;
+}
 
+.technicalskillcontent {
+  font-family: "pokemon";
+  font-size: 13px;
+  margin-top: 15px;
+}

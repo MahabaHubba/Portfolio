@@ -105,6 +105,48 @@ function App() {
 </div>
 
 
+{/* Technicall skill section */}
+<div class="row ">
+<div class="col-12 welcome" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+<h6 className='technicalskilltext'>Technical Skills</h6>
+<p className='technicalskillcontent'>Some of the technical skills which I've picked up on during my career.</p>
+</div>
+</div>
+<div class="row ">
+
+<div class="col-md-6">
+<p>Hi</p>
+</div>
+
+<div class="col-md-6">
+<p>Hi</p>
+</div>
+<div class="col-md-6">
+<p>Hi</p>
+</div>
+
+<div class="col-md-6">
+<p>Hi</p>
+</div>
+<div class="col-md-6">
+<p>Hi</p>
+</div>
+
+<div class="col-md-6">
+<p>Hi</p>
+</div>
+<div class="col-md-6">
+<p>Hi</p>
+</div>
+
+<div class="col-md-6">
+<p>Hi</p>
+</div>
+
+</div>
+
+
+{/* Contact Me section */}
 <div class="row" ref={contactRef}>
   <div class="col-md-4 contact1">Contact Me</div>
   <div class="col-md-8 contacticon">Icons</div>
