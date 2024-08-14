@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import ParagraphSections from './Sections/aboutmesection';
 import ImageSlider from './Sections/portfolio';
 import HobbiesSlider from './Sections/hobbies';
-
+import Footer from './Sections/contact';
 //Section for about me
 const sections = [
   "Hello my name is Mohibul Haque and welcome to my site",
@@ -112,44 +112,61 @@ function App() {
 <p className='technicalskillcontent'>Some of the technical skills which I've picked up on during my career.</p>
 </div>
 </div>
-<div class="row ">
+<div className="row justify-content-center mx-auto">
 
-<div class="col-md-6">
-<p>Hi</p>
-</div>
-
-<div class="col-md-6">
-<p>Hi</p>
-</div>
-<div class="col-md-6">
-<p>Hi</p>
+<div className="col-md-4 technicalborder technicalbox boxjump">
+<p>HTML</p>
 </div>
 
-<div class="col-md-6">
-<p>Hi</p>
-</div>
-<div class="col-md-6">
-<p>Hi</p>
-</div>
-
-<div class="col-md-6">
-<p>Hi</p>
-</div>
-<div class="col-md-6">
-<p>Hi</p>
-</div>
-
-<div class="col-md-6">
-<p>Hi</p>
+<div className="col-md-4 technicalborder boxjump">
+<p>CSS</p>
 </div>
 
 </div>
+<div className="row justify-content-center mx-auto">
+
+<div className="col-md-4 technicalborder boxjump">
+<p>JavaScript</p>
+</div>
+
+<div className="col-md-4 technicalborder boxjump">
+<p>MongoDB</p>
+</div>
+
+</div>
+<div className="row justify-content-center mx-auto">
+
+<div className="col-md-4 technicalborder boxjump">
+<p>GraphQL</p>
+</div>
+
+<div className="col-md-4 technicalborder boxjump">
+<p>Apollo Server</p>
+</div>
+
+</div>
+<div className="row justify-content-center mx-auto">
+
+<div className="col-md-4 technicalborder boxjump">
+<p>React</p>
+</div>
+
+<div className="col-md-4 technicalborder boxjump">
+<p>AWS</p>
+</div>
+
+</div>
+
 
 
 {/* Contact Me section */}
-<div class="row" ref={contactRef}>
-  <div class="col-md-4 contact1">Contact Me</div>
-  <div class="col-md-8 contacticon">Icons</div>
+<div className="row contactbox" ref={contactRef}>
+<div class="col-12 welcome" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+<h6 className='technicalskilltext'>Contact Me</h6>
+<p className='technicalskillcontent'>If you have any question queries or concerns, please don't hesitate to contact througuh my socials.</p>
+</div>
+<Footer/>
+  
 </div>
 
   </div>
