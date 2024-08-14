@@ -1,0 +1,35 @@
+.paragraph-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paragraph-content {
+  flex: 1;
+  text-align: center;
+  margin: 0 20px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1;
+  position: relative;
+  margin-top: 30px;
+}
+
+.animating {
+  opacity: 0;
+  transform: translateX(0);
+  animation: none;
+}
+
+.arrow-icon {
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none;
+}
+
+.left-arrow {
+  margin-right: 10px;
+}
+
+.right-arrow {
+  margin-left: 10px;
+}
