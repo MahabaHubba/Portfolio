@@ -41,6 +41,7 @@
     justify-content: center; /* Horizontally centers the content */
     align-items: center;
     font-family: "pokemon";
+    
   }
 
   .aboutmesegment {
@@ -110,21 +111,6 @@
   margin-right: 16px;
 }
 
-/* @keyframes jump {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
-.nav-link-jump:hover {
-  animation: bounce 1s;
-} */
 
 @font-face {
   font-family: "pokemonpixel";
@@ -209,6 +195,14 @@
 
 .contactbox {
   height: 25vh;
+ 
 }
 
+.pokemonpixelC {
+  font-family: "pokemonpixel";
+  font-size: 20px;
+}
 
+.pokemonpixelC:hover{
+  animation: bounce 1s infinite;
+}

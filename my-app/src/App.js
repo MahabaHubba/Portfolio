@@ -8,7 +8,6 @@ import HobbiesSlider from './Sections/hobbies';
 import Footer from './Sections/contact';
 //Section for about me
 const sections = [
-  "Hello my name is Mohibul Haque and welcome to my site",
   "I'm a software engineer with one year of  software developing experience. I have a strong passion for transforming ideas into functional and user-friendly solutions. Throughout my career, I've collaborated with cross-functional teams and gained valuable insights into the ever-evolving software industry. ",
   "My experience as an exercise physiologist has enabled me to work in a fast-paced environment, and collaborate effectively in a term environment to save time, money for my clients to reach their desired goal.",
   "Continue down below to see what I'm about and if you have any questions, queries or concerns, please don't hesitate to contact me"
@@ -76,7 +75,11 @@ function App() {
     </div>
 
     <div class="row" ref={aboutRef}>
-  <div class="col-md-4 aboutme1">About Me</div>
+  <div class="col-md-4 aboutme1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', marginTop:'30px' }}>
+  <p>About Me</p>
+    <p className='portfoliocontent'> Hello my name is Mohibul Haque and welcome to my site</p>
+    <p className='pokemonpixel3 nav-link-bounce'>s</p>
+  </div>
   <div class="col-md-8 aboutmesegment">
   <ParagraphSections sections={sections} />
   </div>
@@ -107,10 +110,13 @@ function App() {
 
 {/* Technicall skill section */}
 <div class="row ">
-<div class="col-12 welcome" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-<h6 className='technicalskilltext'>Technical Skills</h6>
-<p className='technicalskillcontent'>Some of the technical skills which I've picked up on during my career.</p>
+<div class="col-12 welcome" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom:"0px"}}>
+  <p className='pokemonpixelC' style={{ marginRight:'10px' }}>S</p>
+  <h6 className='technicalskilltext'>Technical Skills</h6>
+  <p className='pokemonpixelC' style={{ marginLeft:'10px' }}>G</p>
 </div>
+<p className='technicalskillcontent'style={{ marginTop: '-25px' }}>Some of the technical skills which I've picked up on during my career.</p>
+
 </div>
 <div className="row justify-content-center mx-auto">
 
@@ -161,12 +167,13 @@ function App() {
 
 {/* Contact Me section */}
 <div className="row contactbox" ref={contactRef}>
-<div class="col-12 welcome" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-<h6 className='technicalskilltext'>Contact Me</h6>
-<p className='technicalskillcontent'>If you have any question queries or concerns, please don't hesitate to contact througuh my socials.</p>
-</div>
-<Footer/>
-  
+  <div class="col-12 welcome" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: "20px" }}>
+    <p className='pokemonpixelC' style={{ marginRight:'10px' }}>M</p>
+    <h6 className='technicalskilltext'>Contact Me</h6>
+    <p className='pokemonpixelC' style={{ marginLeft:'10px' }}>7</p>
+  </div>
+  <p className='technicalskillcontent'style={{ marginTop: '-25px' }}>If you have any question queries or concerns, please don't hesitate to contact througuh my socials.</p>
+  <Footer/>
 </div>
 
   </div>
