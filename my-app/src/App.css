@@ -1,5 +1,5 @@
 .gradient-bg {
-  background: radial-gradient(ellipse at top left, white 50%, black 100%);
+  background: radial-gradient(ellipse at top left, white 50%, grey 100%);
 }
 
 
@@ -41,6 +41,7 @@
     justify-content: center; /* Horizontally centers the content */
     align-items: center;
     font-family: "pokemon";
+    
   }
 
   .aboutmesegment {
@@ -55,11 +56,28 @@
   .portfolio {
     height: 25vh;
     display: flex;
-    justify-content: center; /* Horizontally centers the content */
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
     font-family: "pokemon";
   }
 
+  .portfoliocontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .hobbiescontent {
+    height: 25vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: "pokemon";
+  }
+
+  
   .contact1 {
     height: 30vh;
     display: flex;
@@ -93,21 +111,6 @@
   margin-right: 16px;
 }
 
-/* @keyframes jump {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
-.nav-link-jump:hover {
-  animation: bounce 1s;
-} */
 
 @font-face {
   font-family: "pokemonpixel";
@@ -119,6 +122,13 @@
   font-size: 50px;
   margin-right: 20px;
   margin-top: 150px;
+}
+
+.pokemonpixel3 {
+  font-family: "pokemonpixel";
+  /* animation: bounce 1s infinite; */
+  font-size: 25px;
+  
 }
 
 .pokemonpixel2 {
@@ -133,5 +143,66 @@
   font-size: 30px;
 }
 
-/* portfolio */
+/* Technical SKills css */
+.technicalskilltext {
+  font-family: "pokemon";
+  font-size: 15px;
+}
 
+.technicalskillcontent {
+  font-family: "pokemon";
+  font-size: 13px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.technicalborder {
+  border:4px solid black;
+}
+
+/* .technicalborder {
+  border: 2px solid black;
+  margin-bottom: 10px;
+} */
+.technicalborder {
+  border: 2px solid black; /* Add a border */
+  padding: 10px; /* Optional: Add padding inside the div */
+  /* Remove the width property */
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-family: pokemon;
+  font-size: 10px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.techincalbox {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;
+}
+
+.boxjump {
+  transition: transform 0.5s ease-out;
+    display: inline-block;
+}
+
+.boxjump:hover {
+  transform: scale(1.05)
+}
+
+/* Contact me Section */
+
+.contactbox {
+  height: 25vh;
+ 
+}
+
+.pokemonpixelC {
+  font-family: "pokemonpixel";
+  font-size: 20px;
+}
+
+.pokemonpixelC:hover{
+  animation: bounce 1s infinite;
+}

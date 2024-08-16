@@ -1,0 +1,38 @@
+.logos {
+    border: 3px solid black;
+    padding: 7px;
+    background-color: rgb(190, 189, 189);
+    box-shadow: 2px 3px grey;
+  }
+  
+  .logos img {
+    width: 45px;
+    margin: 9px;
+    box-shadow: 2px 2px #0d0304;
+    border-radius: 13px;
+    transition: box-shadow 0.3s, transform 0.4s;
+  }
+  
+  .logos img:hover {
+    box-shadow: 3px 3px #0d0304;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .logos img:active,
+  .logos img:focus {
+    box-shadow: 1px 1px #0d0304; 
+    transform: scale(0.95);
+  }
+  
+  .contact-details {
+    border: 2px solid black;
+    background-color: rgb(190, 189, 189);
+    font-family: "pokemon";
+    font-size: 10px;
+  }
+
+  @font-face {
+    font-family: "pokemon";
+    src: url('/public/pokemonfont/PokemonGb-RAeo.ttf') format('truetype');
+  }
