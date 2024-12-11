@@ -29,7 +29,7 @@ const images = [
 //Section for Hobbies
 const hobbiesimage = [
   {src: "Japan.JPG", title: "Japan Trip", description: "Exploring light show at Team Lab Tokyo "}, 
-  {src: "Lifting.JPG", title: "Powerlifting", description: "Prepping to compete soon"},
+  {src: "Lifting.jpg", title: "Powerlifting", description: "Prepping to compete soon"},
   {src: "Food.PNG", description: "My first time trying somalian mandi"},
   {src: "Party.JPG", description: "Who doesn't like to dance?"}
   
